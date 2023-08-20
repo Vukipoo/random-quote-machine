@@ -1,5 +1,6 @@
-import "./App.css";
-import React, { useState } from "react";
+import "./App.scss";
+import React, { useState, useEffect } from "react";
+
 
 export default function App() {
   const [quote, setQuote] = useState("");
@@ -13,15 +14,24 @@ export default function App() {
       });
     }
 
+
+    useEffect(() => {
+      getQuote();
+
+    }, []);
+
+
   
   
 
   return (
     <div className="App">
+      <img src='https://play-lh.googleusercontent.com/dNjXI5-kNNTlH6KZm9DrffEehlWM8BQ3Yph-PL3gyT_3mPjMrllU1P5268ngI6Vmjj8=s200'/>
+      <div className="quotes-container">
       <button onClick={getQuote}>Get Quote</button>
-      <div>{quote.author}</div>
-      <div>{quote.quote}</div>
-
+      <div className="author">{quote.author}</div>
+      <div className="quote">{quote.quote}</div>
+      </div>
     </div>
   );
 }

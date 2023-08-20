@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+  background-color: black;
+  height: 600px;
+  background-position: no-repeat;
+  background-size: cover;
+
+  img {
+    position: relative;
+    top: 130px;
+    right: 300px;
+  }
+
+  button {
+    margin-bottom: 30px;
+  }
+}
+.author {
+  position: relative;
+  color: white;
+}
+
+.quote {
+  color: white;
+  width: 400px;
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+}
