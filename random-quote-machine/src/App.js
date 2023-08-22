@@ -5,6 +5,8 @@ import { useSpring, animated } from 'react-spring';
 
 
 
+
+
 export default function App() {
   const [quote, setQuote] = useState("");
 
@@ -31,7 +33,6 @@ export default function App() {
     });
 
 
-  
 
   return (
     <animated.div style={fadeIn} className="App"> 
